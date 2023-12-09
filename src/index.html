@@ -3,14 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-advancedjs-hw-02</title>
-    <link rel="stylesheet" href="css/common.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/slim-select@latest/dist/slimselect.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <title>goit-advancedjs-hw-03</title>
   </head>
   <body>
-    <ul>
-      <li><a href="01-color-switcher.html">Color switcher</a></li>
-      <li><a href="02-timer.html">Countdown timer</a></li>
-      <li><a href="03-promises.html">Promise generator</a></li>
-    </ul>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__select">
+          <select id="single" class="isHidden js-breed-select"></select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page">
+        <div class="page__container">
+          <div class="wrapper">
+            <span class="loader js-loader"></span>
+          </div>
+
+          <div class="js-cat-info"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
